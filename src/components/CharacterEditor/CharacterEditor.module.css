@@ -1,9 +1,19 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  position: relative;
+}
+
+.backgroundColorBlock {
+  height: 50%;
+  position: fixed;
+  background-color: hsl(195deg, 20%, 86%);
+  top: 60%;
+  width: 100%;
 }
 
 .maxWidthWrapper {
+  width: 100%;
 }
 
 .header {
@@ -27,4 +37,31 @@
 }
 
 .controlColumn {
+}
+
+@media all and (max-width: 767px) {
+  html {
+    overflow: hidden;
+  }
+
+  .controlColumn {
+    display: flex;
+    overflow: scroll;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .characterEditor {
+    overflow-y: hidden;
+    height: 50%;
+    margin-top: 50%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    width: 65%;
+  }
 }
