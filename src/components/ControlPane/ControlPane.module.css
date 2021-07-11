@@ -32,9 +32,3 @@
     margin-right: 15px;
   }
 }
-
-@media all and (min-width: 768px) {
-  .controlPane {
-    width: 50%;
-  }
-}
